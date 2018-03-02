@@ -1,7 +1,8 @@
 # BAMAZON
 
 **Overview:**
-This activity creates an Amazon-like storefront. The app will take in orders from customers and complete the process by:
-    1.  stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.
+This activity creates an Amazon-like storefront. The app will take in orders from customers and complete the process by checking inventory and presenting one of the following responses:
+1. 'The product you requested is in stock! Placing order...'Your order has been placed! Your total is $xxx.xx...'Thank you for shopping with us!''
+2. 'Sorry, this item is out-of-stock. Please select another item.'
 
-Make sure you save and require the MySQL and Inquirer npm packages in your homework files--your app will need them for data input and storage.
+### Have Fun and Thanks for Playing :)
