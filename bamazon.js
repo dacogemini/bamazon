@@ -36,19 +36,12 @@ function promptUserPurchase() {
 
 		connection.query(queryStr, {item_id: item}, function(err, data) {
 			if (err) throw err;
-
-			// If the user has selected an invalid item ID, data attay will be empty
-			// console.log('data = ' + JSON.stringify(data));
-
 			if (data.length === 0) {
 				console.log('ERROR: Invalid Item ID. Please select a valid Item ID.');
 				displayInventory();
 
 			} else {
 				var productData = data[0];
-
-				// console.log('productData = ' + JSON.stringify(productData));
-				// console.log('productData.stock_quantity = ' + productData.stock_quantity);
 
 				// If the quantity requested by the user is in stock
 				if (quantity <= productData.stock_quantity) {
@@ -72,7 +65,6 @@ function promptUserPurchase() {
 				} else {
 					console.log('Sorry, this item is out-of-stock. Please select another item.');
 					console.log("\n---------------------------------------------------------------------\n");
-
 					displayInventory();
 				}
 			}
