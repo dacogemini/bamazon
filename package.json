@@ -5,6 +5,10 @@
   "main": "bamazon.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+<<<<<<< HEAD
+=======
+     "start": "node index.js"
+>>>>>>> 84067cd568312bd3ddd3e103a55480b9b921cd5a
   },
   "author": "Dan Collins",
   "license": "ISC",
