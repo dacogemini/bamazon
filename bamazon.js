@@ -8,11 +8,7 @@ var connection = mysql.createConnection({
     password: "",
     database: "bamazon_DB"
 })
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 84067cd568312bd3ddd3e103a55480b9b921cd5a
 console.log("Welcome! Here is a list of our products: ");
 
 
